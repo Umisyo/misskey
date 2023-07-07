@@ -22,7 +22,7 @@ export interface IObject {
 	content?: string | null;
 	startTime?: Date;
 	endTime?: Date;
-	icon?: IIcon;
+	icon?: Icon;
 	image?: string | undefined;
 	url?: ApObject | string;
 	href?: string;
@@ -250,12 +250,6 @@ export interface IApDocument extends IObject {
 	type: 'Document';
 	name: string | null;
 	mediaType: string;
-}
-
-export interface IIcon extends IObject {
-	type: 'Image';
-	mediaType: string;
-	url: string;
 }
 
 export interface IApImage extends IObject {
